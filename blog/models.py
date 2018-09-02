@@ -3,8 +3,8 @@ from django.db import models
 
 class Blog(models.Model):
     title = models.CharField(max_length=32)
-    datetime = models.DateTimeField(auto_now=True)
-    blog_body = models.CharField(max_length=1000)
+    datetime = models.DateTimeField()
+    blog_body = models.TextField()
     image = models.ImageField(upload_to='images/')
 # Create a Blog model
 # Title
